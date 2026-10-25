@@ -1,0 +1,36 @@
+Source: gnome-system-monitor
+Section: gnome
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Uploaders: Jeremy Bícha <jbicha@ubuntu.com>
+Build-Depends: appstream <!nocheck>,
+               debhelper-compat (= 13),
+               desktop-file-utils <!nocheck>,
+               docbook-to-man,
+               gsettings-desktop-schemas-dev,
+               itstool,
+               libadwaita-1-dev (>= 1.6~beta),
+               libcatch2-dev,
+               libglib2.0-dev,
+               libgtk-4-dev (>= 4.12.0),
+               libgtkmm-4.0-dev,
+               libgtop2-dev (>= 2.41.2),
+               librsvg2-dev,
+               libsystemd-dev [linux-any],
+               meson (>= 0.57.0),
+               pkgconf,
+               polkitd,
+Standards-Version: 4.7.2
+Vcs-Browser: https://salsa.debian.org/gnome-team/gnome-system-monitor
+Vcs-Git: https://salsa.debian.org/gnome-team/gnome-system-monitor.git
+Homepage: https://apps.gnome.org/SystemMonitor/
+
+Package: gnome-system-monitor
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Recommends: gvfs
+Suggests: pkexec
+Description: Process viewer and system resource monitor for GNOME
+ This package allows you to graphically view and manipulate the running
+ processes on your system.  It also provides an overview of available
+ resources such as CPU and memory.
