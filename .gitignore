@@ -1,0 +1,8 @@
+buildDir/
+obj-x86_64-linux-gnu/
+debian/.debhelper/
+debian/gnome-system-monitor/
+debian/files
+debian/*.substvars
+debian/debhelper-build-stamp
+.idea/
